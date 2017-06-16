@@ -1,0 +1,43 @@
+﻿@{
+    Layout = "~/Views/Shared/Main.cshtml";
+    List<JuTv.Model.QuanMin.DataItems> Lists = ViewBag.TV;
+}
+
+<div style="width:80%;margin:0 auto">
+    <div class="row">
+        @foreach (var item in Lists)
+        {
+            <a href="/Home/Player?roomid=@item.uid&type=QuanMin" style="color:black">
+                <div class="col-md-3" title="@item.title" style="margin-top:30px;">
+
+                    <div class="box-shadow-2 box" style="border-radius:6px 6px 0 0; border:1px solid #ccc;cursor:pointer;border-bottom:2px solid #ccc; background-color:#fff">
+                        <img class="img" src="@item.thumb" style="width:100%;height:200px;border-radius:6px 6px 0 0;" />
+                        <div style="width:90%;margin-left:5%;">
+                            <div style="display:flex;justify-content:space-between;margin-top:10px">
+                                <div style="display:block;max-width:200px; white-space: nowrap;overflow:hidden; text-overflow: ellipsis">@item.title</div>
+                                <span style="color:#ff8e15">@item.category_name</span>
+                            </div>
+
+                            <div style="display:flex;align-items:center;justify-content:space-between;margin-top:10px;margin-bottom:10px;">
+                                <div>
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    <span>@item.nick</span>
+                                </div>
+                                <div>
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                    <span>@item.view</span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </a>
+        }
+    </div>
+</div>
+
+
+

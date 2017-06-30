@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_NewBackgroundProfile>True</_NewBackgroundProfile>
+    <_PublishTargetUrl>F:\SpringLee\JuTvWeb\HeiCat\JuTv\bin\Release\PublishOutput</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>06/01/2017 14:23:37</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>06/01/2017 14:23:37</publishTime>
+    </File>
+    <File Include="bin/JuTv.dll">
+      <publishTime>06/30/2017 12:19:30</publishTime>
+    </File>
+    <File Include="bin/JuTv.pdb">
+      <publishTime>06/30/2017 12:19:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>11/30/2016 16:07:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>12/07/2016 11:45:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>12/07/2016 11:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>12/06/2016 15:15:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>12/07/2016 11:49:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>12/07/2016 11:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>12/06/2016 15:09:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>12/13/2016 03:10:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>01/05/2012 11:08:46</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 20:33:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>09/10/2013 17:28:38</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Helpers.resources.dll">
+      <publishTime>01/28/2015 04:04:32</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Mvc.resources.dll">
+      <publishTime>01/28/2015 04:02:22</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Optimization.resources.dll">
+      <publishTime>02/11/2014 15:28:40</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Razor.resources.dll">
+      <publishTime>01/28/2015 04:02:34</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>01/28/2015 04:04:32</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>01/28/2015 04:04:32</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.resources.dll">
+      <publishTime>01/28/2015 04:04:32</publishTime>
+    </File>
+    <File Include="Content/BaiduPlayer/cyberplayer.flash.swf">
+      <publishTime>06/15/2017 14:17:38</publishTime>
+    </File>
+    <File Include="Content/BaiduPlayer/cyberplayer.js">
+      <publishTime>06/15/2017 14:17:38</publishTime>
+    </File>
+    <File Include="Content/bootstrap/css/bootstrap-theme.css">
+      <publishTime>06/02/2017 10:13:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap/css/bootstrap-theme.css.map">
+      <publishTime>06/02/2017 10:13:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap/css/bootstrap-theme.min.css">
+      <publishTime>06/02/2017 10:13:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap/css/bootstrap.css">
+      <publishTime>06/02/2017 10:13:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap/css/bootstrap.css.map">
+      <publishTime>06/02/2017 10:13:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap/css/bootstrap.min.css">
+      <publishTime>06/02/2017 10:13:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>06/02/2017 10:13:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>06/02/2017 10:13:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>06/02/2017 10:13:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>06/02/2017 10:13:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap/js/bootstrap.js">
+      <publishTime>06/02/2017 10:13:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap/js/bootstrap.min.js">
+      <publishTime>06/02/2017 10:13:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap/js/jquery2.0.min.js">
+      <publishTime>06/02/2017 10:13:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap/js/npm.js">
+      <publishTime>06/02/2017 10:13:01</publishTime>
+    </File>
+    <File Include="Content/ckplayer/ckplayer.js">
+      <publishTime>06/02/2017 15:32:19</publishTime>
+    </File>
+    <File Include="Content/ckplayer/ckplayer.swf">
+      <publishTime>06/02/2017 15:32:19</publishTime>
+    </File>
+    <File Include="Content/ckplayer/ckplayer.xml">
+      <publishTime>06/02/2017 15:32:19</publishTime>
+    </File>
+    <File Include="Content/ckplayer/language.xml">
+      <publishTime>06/02/2017 15:32:19</publishTime>
+    </File>
+    <File Include="Content/ckplayer/related.xml">
+      <publishTime>06/02/2017 15:32:19</publishTime>
+    </File>
+    <File Include="Content/ckplayer/share.xml">
+      <publishTime>06/02/2017 15:32:19</publishTime>
+    </File>
+    <File Include="Content/ckplayer/share/feixin.png">
+      <publishTime>06/02/2017 15:32:19</publishTime>
+    </File>
+    <File Include="Content/ckplayer/share/google.png">
+      <publishTime>06/02/2017 15:32:19</publishTime>
+    </File>
+    <File Include="Content/ckplayer/share/kaixin001.png">
+      <publishTime>06/02/2017 15:32:19</publishTime>
+    </File>
+    <File Include="Content/ckplayer/share/msn.png">
+      <publishTime>06/02/2017 15:32:19</publishTime>
+    </File>
+    <File Include="Content/ckplayer/share/qq.png">
+      <publishTime>06/02/2017 15:32:19</publishTime>
+    </File>
+    <File Include="Content/ckplayer/share/qq2.png">
+      <publishTime>06/02/2017 15:32:19</publishTime>
+    </File>
+    <File Include="Content/ckplayer/share/qzone.png">
+      <publishTime>06/02/2017 15:32:19</publishTime>
+    </File>
+    <File Include="Content/ckplayer/share/rr.png">
+      <publishTime>06/02/2017 15:32:19</publishTime>
+    </File>
+    <File Include="Content/ckplayer/share/sina.png">
+      <publishTime>06/02/2017 15:32:19</publishTime>
+    </File>
+    <File Include="Content/ckplayer/share/sohu.png">
+      <publishTime>06/02/2017 15:32:19</publishTime>
+    </File>
+    <File Include="Content/ckplayer/share/tianya.png">
+      <publishTime>06/02/2017 15:32:19</publishTime>
+    </File>
+    <File Include="Content/ckplayer/style.swf">
+      <publishTime>06/02/2017 15:32:19</publishTime>
+    </File>
+    <File Include="Content/image/blogo.png">
+      <publishTime>06/01/2017 16:46:15</publishTime>
+    </File>
+    <File Include="Content/image/logo.ico">
+      <publishTime>06/01/2017 16:02:05</publishTime>
+    </File>
+    <File Include="Content/image/Logo.png">
+      <publishTime>06/01/2017 16:02:05</publishTime>
+    </File>
+    <File Include="Content/js/bootstrap.js">
+      <publishTime>06/01/2017 14:23:32</publishTime>
+    </File>
+    <File Include="Content/js/bootstrap.min.js">
+      <publishTime>06/01/2017 14:23:32</publishTime>
+    </File>
+    <File Include="Content/js/chplayer.js">
+      <publishTime>06/02/2017 15:31:12</publishTime>
+    </File>
+    <File Include="Content/js/flv.js">
+      <publishTime>06/02/2017 15:40:35</publishTime>
+    </File>
+    <File Include="Content/js/flv.min.js">
+      <publishTime>06/02/2017 15:48:48</publishTime>
+    </File>
+    <File Include="Content/js/jquery-1.10.2.js">
+      <publishTime>06/01/2017 14:23:32</publishTime>
+    </File>
+    <File Include="Content/js/jquery-1.10.2.min.js">
+      <publishTime>06/01/2017 14:23:32</publishTime>
+    </File>
+    <File Include="Content/js/jquery-1.10.2.min.map">
+      <publishTime>06/01/2017 14:23:32</publishTime>
+    </File>
+    <File Include="Content/js/jquery.validate.js">
+      <publishTime>06/01/2017 14:23:35</publishTime>
+    </File>
+    <File Include="Content/js/jquery.validate.min.js">
+      <publishTime>06/01/2017 14:23:35</publishTime>
+    </File>
+    <File Include="Content/js/jquery.validate.unobtrusive.js">
+      <publishTime>06/01/2017 14:23:35</publishTime>
+    </File>
+    <File Include="Content/js/jquery.validate.unobtrusive.min.js">
+      <publishTime>06/01/2017 14:23:35</publishTime>
+    </File>
+    <File Include="Content/js/modernizr-2.6.2.js">
+      <publishTime>06/01/2017 14:23:34</publishTime>
+    </File>
+    <File Include="Content/js/respond.js">
+      <publishTime>06/01/2017 14:23:35</publishTime>
+    </File>
+    <File Include="Content/js/respond.min.js">
+      <publishTime>06/01/2017 14:23:35</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>06/01/2017 14:23:30</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/01/2017 14:23:30</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/01/2017 14:23:38</publishTime>
+    </File>
+    <File Include="Views/Home/Bilibili.cshtml">
+      <publishTime>06/30/2017 12:09:20</publishTime>
+    </File>
+    <File Include="Views/Home/DouYu.cshtml">
+      <publishTime>06/07/2017 10:15:29</publishTime>
+    </File>
+    <File Include="Views/Home/HuoMao.cshtml">
+      <publishTime>06/16/2017 15:31:06</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>06/30/2017 12:15:41</publishTime>
+    </File>
+    <File Include="Views/Home/Player.cshtml">
+      <publishTime>06/21/2017 15:56:48</publishTime>
+    </File>
+    <File Include="Views/Home/QuanMin.cshtml">
+      <publishTime>06/08/2017 10:37:20</publishTime>
+    </File>
+    <File Include="Views/Home/Test.cshtml">
+      <publishTime>06/16/2017 16:43:40</publishTime>
+    </File>
+    <File Include="Views/Home/ZhanQi.cshtml">
+      <publishTime>06/16/2017 15:25:56</publishTime>
+    </File>
+    <File Include="Views/Shared/Main.cshtml">
+      <publishTime>06/30/2017 12:19:01</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>06/01/2017 14:23:30</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/30/2017 12:19:31</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -13,15 +13,34 @@ namespace JuTv.Controllers
     {
         public ActionResult Index()
         {
+            
             string url = "https://apis.zhanqi.tv/static/v2.1/live/list/4/1.json?os=1&ver=3.3.4";
             var res = Model.HttpHelper.GetJsonEncode(url);
             var Data = JsonConvert.DeserializeObject<Model.ZhanQi.Root>(res).data.rooms;
             ViewBag.TV = Data;
             ViewBag.Nav = "index";
-            Random r = new Random();
-            var i= r.Next(0,3);
-            ViewBag.Vsrc = "http://dlhls.cdn.zhanqi.tv/zqlive/" + Data[i].videoId + ".m3u8"; ;
+
+
+            string QMurl = "https://www.quanmin.tv/json/play/list.json?0607144417&p=2&rid=(null)&rcat=(null)&uid=-1&screen=2&device=16E8ACC4-97C3-403F-809F-FC798A3C17EA&sw=414.0&sh=736.0&ch=APPStore&refer=list/all&osversion=ios_10.2&appver=3.2.22";
+            var QMres = Model.HttpHelper.GetJson(QMurl);
+            var QMData = JsonConvert.DeserializeObject<Model.QuanMin.Root>(QMres).data;
+            ViewBag.List = QMData;
+
+            if (Request["rid"]==null)
+            {
+                Random r = new Random();
+                var i = r.Next(0, 3);
+                ViewBag.Vsrc = "http://dlhls.cdn.zhanqi.tv/zqlive/" + Data[i].videoId + ".m3u8";
+            }
+            else
+            {
+                var rid = Request["rid"].ToString();
+                ViewBag.Vsrc = "http://dlhls.cdn.zhanqi.tv/zqlive/" + rid + ".m3u8";
+
+            }
+
             return View();
+            
         }
         public ActionResult Bilibili()
         {

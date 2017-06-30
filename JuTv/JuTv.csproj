@@ -229,6 +229,8 @@
     <Content Include="Views\Home\QuanMin.cshtml" />
     <Content Include="Views\Home\HuoMao.cshtml" />
     <Content Include="Views\Home\ZhanQi.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -32,74 +32,25 @@
 
             <ul class="nav_bar_list">
 
-                 @if (ViewBag.Nav == "index")
-                 {
-                    <li class="active">
-                        <a href="/">全部平台</a>
-                    </li>
-                 }
-                 else
-                 {
-                    <li>
-                        <a href="/">全部平台</a>
-                    </li>
-                 }
-                @if (ViewBag.Nav == "bilibili")
-                {
-                    <li class="active">
-                        <a href="/Home/Bilibili">哔哩哔哩</a>
-                    </li>
-                }
-                else
-                {
-                    <li>
-                        <a href="/Home/Bilibili">哔哩哔哩</a>
-                    </li>
-                }
                
+                <li class='@(new HtmlString(ViewBag.Nav == "index"?"active":""))'>
+                    <a href="/">全部平台</a>
+                </li>
+               
+                <li class='@(new HtmlString(ViewBag.Nav == "bilibili"?"active":""))'>
+                    <a href="/Home/Bilibili">哔哩哔哩</a>
+                </li>
+                
+                <li class='@(new HtmlString(ViewBag.Nav == "quanmin"?"active":""))'>
+                    <a href="/Home/QuanMin">全民</a>
+                </li>
 
-                @if (ViewBag.Nav == "quanmin")
-                {
-                    <li class="active">
-                        <a href="/Home/QuanMin">全民</a>
-                    </li>
-                }
-                else
-                {
-                    <li>
-                        <a href="/Home/QuanMin">全民</a>
-                    </li>
-                }
-
-                @if (ViewBag.Nav == "huomao")
-                {
-                    <li class="active">
-                        <a href="/Home/HuoMao">火猫</a>
-                    </li>
-                }
-                else
-                {
-                    <li>
-                        <a href="/Home/HuoMao">火猫</a>
-                    </li>
-                }
-
-                @if (ViewBag.Nav == "ZhanQi")
-                {
-                    <li class="active">
-                        <a href="/Home/ZhanQi">战旗</a>
-                    </li>
-                }
-                else
-                {
-                    <li>
-                        <a href="/Home/ZhanQi">战旗</a>
-                    </li>
-                }
-
-
-                <li class='@(new HtmlString(ViewBag.Nav=="LiZhiFM"?"active":""))' >
-                    <a href="/Home/LiZhiFM">荔枝FM</a>
+                <li class='@(new HtmlString(ViewBag.Nav == "huomao"?"active":""))'>
+                    <a href="/Home/HuoMao">火猫</a>
+                </li>
+               
+                <li class='@(new HtmlString(ViewBag.Nav == "ZhanQi"?"active":""))'>
+                    <a href="/Home/ZhanQi">战旗</a>
                 </li>
                
             </ul>

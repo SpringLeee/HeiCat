@@ -162,15 +162,7 @@ namespace JuTv.Controllers
             return View();
         }
 
-        public ActionResult LiZhiFM()
-        {
-            string url = "https://appweb.lizhi.fm/smallApp/getLiveList?pageNum=1&t=oM5UI0RtdYnlkoCMBy9-twtjb6E0&s=1c72a98a7a99b3ed7ad8b484933641c5&dataVerTime=1501057595";
-            var res = Model.HttpHelper.GetJsonEncode(url);
-            var Data = JsonConvert.DeserializeObject<Model.LiZhi.Root>(res).ret.dataList.ToList();
-            ViewBag.TV = Data;
-            ViewBag.Nav = "LiZhiFM";
-            return View();
-        }
+       
 
         
 

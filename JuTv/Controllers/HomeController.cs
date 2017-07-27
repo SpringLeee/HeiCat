@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using System.Xml;
@@ -39,6 +40,14 @@ namespace JuTv.Controllers
 
             }
 
+
+            //----------------- 记录日志
+
+            var AddressIP = Model.HttpHelper.GetWebClientIp();
+
+            Spring.QQMailHelper.Send("1028789852","mm2717965346","1028789852@qq.com","Bingo","你好,"+DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss") + AddressIP + " 访问了黑猫TV");
+            
+
             return View();
             
         }
@@ -46,7 +55,7 @@ namespace JuTv.Controllers
         {
             List<Model.Bilibili.DataItem> Data = new List<Model.Bilibili.DataItem>();
 
-            for (int i = 1; i < 5; i++)
+            for (int i = 1; i < 3; i++)
             {
                 string url = "https://api.live.bilibili.com/mobile/rooms?access_key=14db06974ee2eaff933088b839c32eca&actionKey=appkey&appkey=27eb53fc9058f8c3&area_id=0&build=5570&device=phone&mobi_app=iphone&page="+i+"&platform=ios&sign=8bd36245df27313f46a3eec3e30f2fad&sort=hottest&ts=1496366812";
                 var res = Model.HttpHelper.GetJson(url);
@@ -55,7 +64,16 @@ namespace JuTv.Controllers
                 Data.AddRange(temp);
             }
 
+            List<string> Imgs = new List<string>();
+            foreach (var item in Data)
+            {
+                var res = Model.HttpHelper.GetHtml(item.cover.src);
+                Imgs.Add("data:image/jpeg;base64," + res);
+            }
+            
+
             ViewBag.TV = Data;
+            ViewBag.Imgs = Imgs;
             ViewBag.Nav = "bilibili";
 
             return View();
@@ -144,9 +162,23 @@ namespace JuTv.Controllers
             return View();
         }
 
-
-        public ActionResult Test()
+        public ActionResult LiZhiFM()
         {
+            string url = "https://appweb.lizhi.fm/smallApp/getLiveList?pageNum=1&t=oM5UI0RtdYnlkoCMBy9-twtjb6E0&s=1c72a98a7a99b3ed7ad8b484933641c5&dataVerTime=1501057595";
+            var res = Model.HttpHelper.GetJsonEncode(url);
+            var Data = JsonConvert.DeserializeObject<Model.LiZhi.Root>(res).ret.dataList.ToList();
+            ViewBag.TV = Data;
+            ViewBag.Nav = "LiZhiFM";
+            return View();
+        }
+
+        
+
+        
+
+        public ActionResult Test1()
+        {
+           
             return View();
        
         }

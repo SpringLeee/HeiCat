@@ -144,4 +144,4 @@ F:\SpringLee\JuTvWeb\HeiCat\JuTv\bin\zh-Hans\System.Web.WebPages.Deployment.reso
 F:\SpringLee\JuTvWeb\HeiCat\JuTv\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
 F:\SpringLee\JuTvWeb\HeiCat\JuTv\obj\Debug\JuTv.dll
 F:\SpringLee\JuTvWeb\HeiCat\JuTv\obj\Debug\JuTv.pdb
-F:\SpringLee\JuTvWeb\HeiCat\JuTv\obj\Debug\JuTv.csprojResolveAssemblyReference.cache
+F:\SpringLee\JuTvWeb\HeiCat\JuTv\bin\Spring.dll

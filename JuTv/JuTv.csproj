@@ -49,6 +49,9 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Spring, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spring.1.0.5\lib\Spring.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -149,6 +152,7 @@
     <Compile Include="Model\Douyu.cs" />
     <Compile Include="Model\HttpHelper.cs" />
     <Compile Include="Model\HuoMao.cs" />
+    <Compile Include="Model\LiZhi.cs" />
     <Compile Include="Model\QuanMin.cs" />
     <Compile Include="Model\ZhanQi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -224,13 +228,14 @@
     <Content Include="Views\Shared\Main.cshtml" />
     <Content Include="Views\Home\Bilibili.cshtml" />
     <Content Include="Views\Home\Player.cshtml" />
-    <Content Include="Views\Home\Test.cshtml" />
+    <Content Include="Views\Home\Test1.cshtml" />
     <Content Include="Views\Home\DouYu.cshtml" />
     <Content Include="Views\Home\QuanMin.cshtml" />
     <Content Include="Views\Home\HuoMao.cshtml" />
     <Content Include="Views\Home\ZhanQi.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <Content Include="Views\Home\LiZhiFM.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

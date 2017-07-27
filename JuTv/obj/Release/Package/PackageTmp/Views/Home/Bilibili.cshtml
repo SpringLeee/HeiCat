@@ -1,34 +1,34 @@
 ﻿@{
     Layout = "~/Views/Shared/Main.cshtml";
     List<JuTv.Model.Bilibili.DataItem> Lists = ViewBag.TV;
+    List<string> Imgs = ViewBag.Imgs;
 }
 
 <div style="width:80%;margin:0 auto">
     <div class="row">
-        @foreach (var item in Lists)
+        @for (int i = 0; i < Lists.Count; i++)
+        
         {
-            <a href="/Home/Player?roomid=@item.room_id&type=Bili" style="color:black">
-                <div class="col-md-3" title="@item.owner.name" style="margin-top:30px;">
-
-
+            <a href="/Home/Player?roomid=@Lists[i].room_id&type=Bili" style="color:black">
+                <div class="col-md-3" title="@Lists[i].owner.name" style="margin-top:30px;">
 
 
                     <div class="box-shadow-2 box" style="border-radius:6px 6px 0 0; border:1px solid #ccc;cursor:pointer;border-bottom:2px solid #ccc; background-color:#fff">
-                        <img class="img" src="@item.cover.src" style="width:100%;height:200px;border-radius:6px 6px 0 0;" />
+                        <img resource="noreferrer" class="img" src="@Imgs[i]" style="width:100%;height:200px;border-radius:6px 6px 0 0;" />
                         <div style="width:90%;margin-left:5%;">
                             <div style="display:flex;justify-content:space-between;margin-top:10px">
-                                <div style="display:block;max-width:200px; white-space: nowrap;overflow:hidden; text-overflow: ellipsis">@item.title</div>
-                                <span style="color:#ff8e15">@item.area</span>
+                                <div style="display:block;max-width:200px; white-space: nowrap;overflow:hidden; text-overflow: ellipsis">@Lists[i].title</div>
+                                <span style="color:#ff8e15">@Lists[i].area</span>
                             </div>
 
                             <div style="display:flex;align-items:center;justify-content:space-between;margin-top:10px;margin-bottom:10px;">
                                 <div>
                                     <span class="glyphicon glyphicon-user"></span>
-                                    <span>@item.owner.name</span>
+                                    <span>@Lists[i].owner.name</span>
                                 </div>
                                 <div>
                                     <span class="glyphicon glyphicon-eye-open"></span>
-                                    <span>@item.online</span>
+                                    <span>@Lists[i].online</span>
                                 </div>
                             </div>
 

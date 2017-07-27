@@ -5,84 +5,74 @@ using System.Web;
 
 namespace JuTv.Model
 {
-    public class Bilibili
+    public class LiZhi
     {
-        public class Owner
+        public class DataListItem
         {
             /// <summary>
             /// 
             /// </summary>
-            public string face { get; set; }
+            public string radioConver { get; set; }
             /// <summary>
             /// 
             /// </summary>
-            public int mid { get; set; }
+            public int liveStatus { get; set; }
             /// <summary>
-            /// 小米公司
+            /// 
             /// </summary>
-            public string name { get; set; }
+            public string totalCount { get; set; }
+            /// <summary>
+            /// 我可以跟在你身后
+            /// </summary>
+            public string liveName { get; set; }
+            /// <summary>
+            /// 罗师傅【燃点娱乐】
+            /// </summary>
+            public string userName { get; set; }
+            /// <summary>
+            /// 
+            /// </summary>
+            public string liveId { get; set; }
+            /// <summary>
+            /// 
+            /// </summary>
+            public string userPortrait { get; set; }
+            /// <summary>
+            /// 
+            /// </summary>
+            public string liveStartTime { get; set; }
+            /// <summary>
+            /// 
+            /// </summary>
+            public string liveEndTime { get; set; }
+            /// <summary>
+            /// 
+            /// </summary>
+            public string tag { get; set; }
         }
 
-        public class Cover
+        public class Ret
         {
             /// <summary>
             /// 
             /// </summary>
-            public string src { get; set; }
+            public List<DataListItem> dataList { get; set; }
             /// <summary>
             /// 
             /// </summary>
-            public int height { get; set; }
+            public int count { get; set; }
             /// <summary>
             /// 
             /// </summary>
-            public int width { get; set; }
-        }
-
-        public class DataItem
-        {
+            public int pageTotal { get; set; }
             /// <summary>
             /// 
             /// </summary>
-            public Owner owner { get; set; }
+            public string dataVerTime { get; set; }
             /// <summary>
             /// 
             /// </summary>
-            public Cover cover { get; set; }
-            /// <summary>
-            /// 小米Max 2超耐久直播第二季-第9天
-            /// </summary>
-            public string title { get; set; }
-            /// <summary>
-            /// 
-            /// </summary>
-            public int room_id { get; set; }
-            /// <summary>
-            /// 
-            /// </summary>
-            public int online { get; set; }
-            /// <summary>
-            /// 
-            /// </summary>
-            public string playurl { get; set; }
-            /// <summary>
-            /// 
-            /// </summary>
-            public string accept_quality { get; set; }
-            /// <summary>
-            /// 
-            /// </summary>
-            public int broadcast_type { get; set; }
-            /// <summary>
-            /// 生活娱乐
-            /// </summary>
-            public string area { get; set; }
-            /// <summary>
-            /// 
-            /// </summary>
-            public int area_id { get; set; }
-
-           
+            public int pageNum { get; set; }
         }
 
         public class Root
@@ -94,11 +84,16 @@ namespace JuTv.Model
             /// <summary>
             /// 
             /// </summary>
-            public string message { get; set; }
+            public string msg { get; set; }
             /// <summary>
             /// 
             /// </summary>
-            public List<DataItem> data { get; set; }
+            public Ret ret { get; set; }
+            /// <summary>
+            /// 
+            /// </summary>
+            public string opt { get; set; }
         }
+
     }
 }

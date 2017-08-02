@@ -21,7 +21,7 @@
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -152,6 +152,7 @@
     <Compile Include="Model\Douyu.cs" />
     <Compile Include="Model\HttpHelper.cs" />
     <Compile Include="Model\HuoMao.cs" />
+    <Compile Include="Model\Ip.cs" />
     <Compile Include="Model\LiZhi.cs" />
     <Compile Include="Model\QuanMin.cs" />
     <Compile Include="Model\ZhanQi.cs" />
@@ -238,6 +239,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\logs\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

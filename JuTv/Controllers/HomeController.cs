@@ -43,10 +43,9 @@ namespace JuTv.Controllers
 
             //----------------- 记录日志
 
-            var AddressIP = Model.HttpHelper.GetWebClientIp();
+            var ip = Model.HttpHelper.GetWebClientIp();
 
-            Spring.QQMailHelper.Send("1028789852","mm2717965346","1028789852@qq.com","Bingo","你好,"+DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss") + AddressIP + " 访问了黑猫TV");
-            
+            Model.HttpHelper.Writefeecus("------------ "+DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") +" : "+ip+ " ：访问了黑猫TV");
 
             return View();
             
@@ -161,16 +160,12 @@ namespace JuTv.Controllers
             
             return View();
         }
-
-       
-
-        
-
         
 
         public ActionResult Test1()
         {
-           
+          
+
             return View();
        
         }

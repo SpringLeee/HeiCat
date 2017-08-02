@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -128,6 +129,24 @@ namespace JuTv.Model
             return userIP;
         }
 
+    
+
+        public static string Writefeecus(string con)
+        {
+           
+            string path = System.Web.HttpContext.Current.Server.MapPath("~/") + "Content/logs/" + DateTime.Now.ToString("yyyyMMdd") + "/";
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+            FileStream file = new FileStream(path + DateTime.Now.ToString("yyyyMMdd") + ".txt", FileMode.Append);
+            using (StreamWriter sw = new StreamWriter(file,Encoding.UTF8))
+            {
+                sw.WriteLine(con);
+            }
+
+            return file.Name;
+        }
 
     }
 }

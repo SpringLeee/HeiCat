@@ -8,6 +8,7 @@
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>False</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
     <WebStackScaffolding_LayoutPageFile>~/Views/Shared/Main.cshtml</WebStackScaffolding_LayoutPageFile>
     <NameOfLastUsedPublishProfile>FolderProfile1</NameOfLastUsedPublishProfile>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
